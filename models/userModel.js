@@ -10,7 +10,7 @@ const userSchema = new mongoose.Schema({
   name: {
     type: String,
     required: true,
-    min: 6,
+    min: 7,
     unique: true,
   },
   postname: {
