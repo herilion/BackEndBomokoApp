@@ -25,6 +25,12 @@ const userSchema = new mongoose.Schema({
     unique: true,
     min: 10,
   },
+  town: {
+    type: String,
+    required: true,
+    min: 3,
+    unique: true,
+  },
   email: {
     type: String,
     required: true,
