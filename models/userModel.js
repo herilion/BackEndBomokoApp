@@ -23,7 +23,7 @@ const userSchema = new mongoose.Schema({
     type: String,
     required: true,
     unique: true,
-    min: 10,
+    min: 11,
   },
   town: {
     type: String,
