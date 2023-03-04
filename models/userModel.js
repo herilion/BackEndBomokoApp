@@ -13,6 +13,12 @@ const userSchema = new mongoose.Schema({
     min: 3,
     unique: true,
   },
+  postname: {
+    type: String,
+    required: true,
+    min: 3,
+    unique: true,
+  },
   email: {
     type: String,
     required: true,
