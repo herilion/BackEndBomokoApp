@@ -42,4 +42,14 @@ const userSchema = new mongoose.Schema({
   },
 });
 
-module.exports = mongoose.model("Users", userSchema);
+// Define transaction schema
+const transactionSchema = new Schema({
+  amount: Number,
+  source: String,
+  date: Date,
+  motive: String,
+  type: String, // income or expense
+});
+
+module.exports= mongoose.model('Users', userSchema);
+module.exports= mongoose.model('Transaction', transactionSchema);
